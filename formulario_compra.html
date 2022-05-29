@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | GN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bodi">
+    <nav class="dp-menu">               <!-- serve para indentificar um menu -->
+        <ul>
+            <li><a href="index -pos login.html">Home</a></li>
+            <li><a href="#">filmes</a>
+                <ul>
+                    <li><a href="ação.html">Ação</a></li>
+                    <li><a href="cómedia.html">cómedia</a></li>
+                    <li><a href="animação.html">animação</a></li>
+                </ul></li>
+            <a href="login.html"><img src="imagens/usuário.png"></a>
+                <ul>
+                    <li><a href="index.html">Logout</a></li>
+                    <li><a href="#">perfil</a></li>
+                </ul>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <div class="box">
+        <p></p>
+        <form action="">
+            <fieldset>
+                <legend><b>Compra ingresso</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome do Filme</label>
+                </div>
+
+
+
+                <br><br>
+                <p>sessão para mães</p> 
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">sim</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">não</label>
+                <br><br>
+
+
+
+                <label for="data_nascimento"><b>data do filme:</b></label> &nbsp &nbsp
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br>
+
+
+                <select class="select" name="idioma" id="cidade">
+                    <option selected disabled="">Horário</option>
+                    <option>9:00</option>
+                    <option>10:30</option>
+                    <option>12:00</option>
+                    <option>13:30</option>
+                    <option>15:00</option>
+                    <option>16:30</option>
+                    <option>18:00</option>
+                    <option>19:30</option>
+                    <option>21:00</option>
+                </select>
+                <br><br>
+
+
+
+
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">posição da poutrona</label>
+                </div><br>
+
+
+
+
+
+                
+                <select class="select" name="idioma" id="cidade">
+                    <option selected disabled="">Aperitivos</option>
+                    <option>pipoca</option>
+                    <option>quebra-queixo</option>
+                    <option>espetinho de frango</option>
+                    <option>arroz doce</option>
+                </select>
+                <br><br>
+
+
+                <select class="select" name="idioma" id="cidade">
+                    <option selected disabled="">idioma</option>
+                    <option>Português</option>
+                    <option>inglês</option>
+                    <option>espanhol</option>
+                    <option>Françês</option>
+                </select>
+                <br><br>
+
+
+
+
+                    <select class="select" name="idioma" id="cidade">
+                        <option selected disabled="">Legenda</option>
+                        <option>Português</option>
+                        <option>inglês</option>
+                        <option>espanhol</option>
+                        <option>Sem legenda</option>
+                    </select>
+                <br><br>
+                
+                
+                
+                
+                
+                    <select class="select" name="idioma" id="cidade">
+                        <option selected disabled="">Endereço</option>
+                        <option>CHRIS NISWANDEESMALLSYS INC795 E DRAGRAMTUCSON AZ 85705USA</option>
+                        <option>JOHN “GULLIBLE” DOE421 E DRACHMANTUCSON AZ 85705-7598USA</option>
+                        <option>MARY ROEMEGASYSTEMS INCSUITE 5A-1204799 E DRAGRAMTUCSON AZ 85705USA</option>
+                        <option>JOHN SMITH100 MAIN STPO BOX 1022SEATTLE WA 98104USA</option>
+                    </select>
+                <br><br>
+                
+                
+                <select class="select" name="idioma" id="cidade">
+                    <option selected disabled="">Forma de pagamento</option>
+                    <option>Débito</option>
+                    <option>crédito</option>
+                    <option>Pix</option>
+                    <option>boleto</option>
+                </select>
+                <br><br>
+
+
+                
+                
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">cupom</label>
+                </div>
+                <br><br>
+
+
+
+
+                <a  type="submit" name="submit" id="submit" href="agradecimento_compra.html"> Enviar</a>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="dp-menu">               <!-- serve para indentificar um menu -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">filmes</a>
+                <ul>
+                    <li><a href="ação.html">Ação</a></li>
+                    <li><a href="cómedia.html">Cómedia</a></li>
+                    <li><a href="animação.html">animação</a></li></li>
+                </ul></li>
+
+            <li><a href="login.html">Entrar</a></li>
+        </ul>
+    </nav>
+    <section class="fundo-login">
+        <div class= "login">
+            <div>
+                <img src="imagens/logo.png">
+            </div>
+                <form name="frm_login">
+                           <p>
+                           Usuário ou E-mail:<br>
+                           <input id='caixa' type="text" name='txt_usuario' maxlength="40" size="40"><p>
+                           Senha:<br>
+                           <input id='caixa' type="password" name='txt_senha' maxlength="40" size="40"></p>
+                           <input id='botao' type="button" name='btn_login' value="Entrar" onclick='login()'>
+                </form>
+                <p>Ainda não tem uma conta?<a href="formulario_cadastro - Copia (2).html"> Criar conta</a></p>
+        </div>
+        </login>
+        
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<script>
+    function login() {
+            var user=document.frm_login.txt_usuario.value;
+            var pass=document.frm_login.txt_senha.value;
+            
+            if ((user=='gerente' || user=='gerente@gmail') && pass=='123') {
+                alert('Conta Válida com Sucesso!!!');
+                window.location='usuario.html';
+                }
+
+            if ((user=='cliente' || user=='cliente@gmail') && pass=='123') {
+                alert('Conta Válida com Sucesso!!!');
+                window.location='usuario-cliente.html';
+                }
+            if ((user=='funcionario' || user=='funcionario@gmail') && pass=='123') {
+            alert('Conta Válida com Sucesso!!!');
+            window.location='usuario-funcionario.html';
+            }
+            else {
+                alert('Conta Inválida!!!');
+                document.frm_login.txt_usuario.value="";
+                document.frm_login.txt_senha.value="";	
+                document.frm_login.txt_usuario.focus();
+                }
+        }	
+    </script>
+</html>
